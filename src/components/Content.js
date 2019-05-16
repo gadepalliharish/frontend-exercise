@@ -81,4 +81,8 @@ export default class Content {
 
     return this._container;
   }
+
+  getContainer(){
+    return this._container;
+  }
 }

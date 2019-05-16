@@ -32,4 +32,8 @@ export default class Header {
 
     return this._container;
   }
+
+  getContainer(){
+    return this._container;
+  }
 }

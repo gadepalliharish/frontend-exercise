@@ -25,11 +25,16 @@ export default class Sidebar {
     const analyticsButton = new IconButton("chart-line");
     const reportsButton = new IconButton("file-alt");
     const settingsButton = new IconButton("cog");
+    const aboutButton = new IconButton("info");
+    //homeButton.addEventListener('click',()=>alert('home-was-clicked'));
+
+
 
     this._container.appendChild(homeButton.getElement());
     this._container.appendChild(analyticsButton.getElement());
     this._container.appendChild(reportsButton.getElement());
     this._container.appendChild(settingsButton.getElement());
+    this._container.appendChild(aboutButton.getElement());
 
     return this._container;
   }

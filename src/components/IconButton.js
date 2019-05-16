@@ -12,7 +12,9 @@ export default class IconButton {
     this._iconName = iconName;
     this._button = document.createElement("button");
   }
-
+  getName(){
+    return this._iconName;
+  }
   /**
    * Get the component's HTMLElement
    * @return {HTMLElement}
@@ -21,9 +23,9 @@ export default class IconButton {
     this._button.className = "icon-button";
 
     const icon = document.createElement("i");
-    icon.className = `fas fa-${this._iconName} fa-3x`;
+    icon.className = `fas fa-${this._iconName} fa-3x ${this._iconName}`;
     this._button.appendChild(icon);
-
     return this._button;
   }
+
 }
